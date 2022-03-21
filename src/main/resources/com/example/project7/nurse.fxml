@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project7.NurseController">
+   <top>
+      <Label prefHeight="97.0" prefWidth="272.0" text="Nurse Page" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Calisto MT" size="47.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <TilePane prefHeight="303.0" prefWidth="527.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="nameField" prefHeight="39.0" prefWidth="337.0" promptText="Name">
+               <TilePane.margin>
+                  <Insets left="150.0" />
+               </TilePane.margin>
+            </TextField>
+            <TextField fx:id="ageField" prefHeight="42.0" prefWidth="335.0" promptText="age">
+               <TilePane.margin>
+                  <Insets left="150.0" right="2.0" top="10.0" />
+               </TilePane.margin>
+            </TextField>
+            <TextField fx:id="diseaseField" prefHeight="43.0" prefWidth="335.0" promptText="disease">
+               <TilePane.margin>
+                  <Insets left="150.0" right="2.0" top="10.0" />
+               </TilePane.margin>
+            </TextField>
+            <TextField fx:id="docField" prefHeight="45.0" prefWidth="335.0" promptText="specialist doctor">
+               <TilePane.margin>
+                  <Insets left="150.0" right="2.0" top="10.0" />
+               </TilePane.margin>
+            </TextField>
+         </children>
+      </TilePane>
+   </left>
+   <right>
+      <Button fx:id="patientSubmit" mnemonicParsing="false" onAction="#onpatientSubmit" prefHeight="54.0" prefWidth="55.0" text="Submit" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" />
+         </BorderPane.margin>
+      </Button>
+   </right>
+   <bottom>
+      <Button fx:id="docButton" mnemonicParsing="false" onAction="#onDoc" text="Doctor" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>
